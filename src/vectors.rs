@@ -15,16 +15,10 @@ pub fn run()
   // Slices also work on vectors
 
   // Loop over Vector
-  for value in numbers.iter()
-  {
-    print!("{} ", value);
-  }
+  for value in numbers.iter() { print!("{} ", value); }
   println!();
 
   // Change vector values
-  for value in numbers.iter_mut()
-  {
-    *value *= 2;
-  }
+  for value in numbers.iter_mut() { *value *= 2; }
   println!("Mutated Vector:{:?}", numbers);
 }

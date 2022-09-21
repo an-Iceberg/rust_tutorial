@@ -18,7 +18,7 @@ pub fn run()
   let x = 45e7;
 
   // Explicit typing
-  let y: i64 = 4572075481982;
+  let y: i64 = 4_572_075_481_982;
 
   // Max size
   println!("Max i32: {}", std::i32::MAX);
