@@ -11,9 +11,19 @@ mod functions;
 mod pointers;
 mod structs;
 mod enums;
+mod constants;
+mod shadowing;
+mod references;
+mod traits;
+mod reading_a_file;
 
 fn main()
 {
+  // Comments
+
+  /* This is also a comment
+  A multiline comment */
+
   println!();
   print_and_formatting::run();
   println!();
@@ -40,6 +50,16 @@ fn main()
   structs::run();
   println!();
   enums::run();
+  println!();
+  constants::run();
+  println!();
+  shadowing::run();
+  println!();
+  references::run();
+  println!();
+  traits::run();
+  println!();
+  reading_a_file::run();
   println!();
 
   println!("Hello, world!");

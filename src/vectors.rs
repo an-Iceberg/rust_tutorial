@@ -2,6 +2,9 @@ pub fn run()
 {
   println!("  Vectors");
 
+  let my_vector: Vec<i32> = Vec::new();
+  println!("{:?}", my_vector);
+
   let mut numbers: Vec<i16> = vec![29, 72, 14, 147, 20, 92];
 
   numbers.push(5);

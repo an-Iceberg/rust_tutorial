@@ -7,7 +7,12 @@ pub fn run()
 
   let hello = "Hello";
 
-  let mut hello_world = String::from("Hello World");
+  let mut hello_world : String = String::from("Hello World");
+  let some_string = String::from(format!("some number: {}", 13));
+  let some_other_string = format!("some other number: {}", 84);
+
+  println!("{}", some_string);
+  println!("{}", some_other_string);
 
   // Get string length
   println!("Length:{}", hello.len());

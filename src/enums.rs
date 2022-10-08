@@ -1,4 +1,4 @@
-enum Movement
+enum Direction
 {
   // Variants
   Up,
@@ -7,14 +7,14 @@ enum Movement
   Right
 }
 
-fn move_avatar(movement: Movement)
+fn move_avatar(movement: Direction)
 {
   match movement
   {
-    Movement::Up => println!("{}", "UP"),
-    Movement::Down => println!("{}", "DOWN"),
-    Movement::Left => println!("{}", "LEFT"),
-    Movement::Right => println!("{}", "RIGHT")
+    Direction::Up => println!("{}", "UP"),
+    Direction::Down => println!("{}", "DOWN"),
+    Direction::Left => println!("{}", "LEFT"),
+    Direction::Right => println!("{}", "RIGHT")
   }
 }
 
@@ -22,10 +22,10 @@ pub fn run()
 {
   println!("  Enums");
 
-  let avatar1 = Movement::Left;
-  let avatar2 = Movement::Up;
-  let avatar3 = Movement::Down;
-  let avatar4 = Movement::Right;
+  let avatar1:Direction = Direction::Left;
+  let avatar2 = Direction::Up; // Shorthand
+  let avatar3 = Direction::Down;
+  let avatar4 = Direction::Right;
 
   move_avatar(avatar1);
   move_avatar(avatar2);

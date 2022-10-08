@@ -11,7 +11,17 @@ pub fn run()
   // Re-assign value
   numbers[0] = 20;
 
+  for number in numbers.iter()
+  {
+    print!("{} ", number);
+  }
+
+  println!();
   println!("{:?}", numbers);
+
+  let arr = [2; 10]; // Create an array with 10 2s in it
+
+  println!("{:?}", arr);
 
   // Get a single array element
   println!("Single Value:{:?}", numbers[0]);

@@ -13,6 +13,8 @@ pub fn run()
 
   // Default is 'i32'
   let number = 1;
+  let number2: i64 = 2;
+  let num: u32 = 32;
 
   // Default is 'f64'
   let x = 45e7;
@@ -33,5 +35,5 @@ pub fn run()
   let a1 = 'a';
   let rocket = '🚀';
 
-  println!("{:?}", (number, x, y, is_active, is_greater, a1, rocket));
+  println!("{:?}", (number, number2, num, x, y, is_active, is_greater, a1, rocket));
 }
