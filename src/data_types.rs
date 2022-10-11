@@ -4,8 +4,7 @@ Floats: f32, f64
 Boolean: bool
 Characters: char
 Tuples
-Arrays
- */
+Arrays */
 
 pub fn run()
 {

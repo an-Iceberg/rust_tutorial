@@ -41,12 +41,13 @@ fn print_color(color: &Color)
   println!("Colour - Red: {}, Green: {}, Blue: {}", color.red, color.green, color.blue);
 }
 
-fn mutable_reference() {
+fn mutable_reference()
+{
   let mut number = 10;
 
   {
-  let mutable_reference_to_number = &mut number;
-  *mutable_reference_to_number += 11;
+    let mutable_reference_to_number = &mut number;
+    *mutable_reference_to_number += 11;
   }
 
   println!("number: {}", number);

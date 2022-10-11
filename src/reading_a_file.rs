@@ -1,8 +1,13 @@
+use std::{fs::File, io::Read};
+
 pub fn run()
 {
   println!("  Reading a file");
 
-  // TODO: this is where we left off (https://www.youtube.com/watch?v=nQqraiMymcU&list=PLVvjrrRCBy2JSHf9tGxGKJ-bYAN_uDCUL&index=25)
+  let mut file = File::open("info.txt").expect("Can't open file");
+  let mut contents = String::new();
 
-  println!();
+  file.read_to_string(&mut contents).expect("Can't read file");
+
+  println!("File Contents: {}", contents);
 }

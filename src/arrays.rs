@@ -11,10 +11,7 @@ pub fn run()
   // Re-assign value
   numbers[0] = 20;
 
-  for number in numbers.iter()
-  {
-    print!("{} ", number);
-  }
+  for number in numbers.iter() { print!("{} ", number); }
 
   println!();
   println!("{:?}", numbers);

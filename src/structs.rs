@@ -17,20 +17,12 @@ struct Vector2d
 
 impl Vector2d
 {
-  fn new(x: i32, y: i32) -> Vector2d
-  {
-    Vector2d{x, y} // This is the shorthand struct initialisation
-  }
+  // This is the shorthand struct initialisation
+  fn new(x: i32, y: i32) -> Vector2d { Vector2d{x, y} }
 
-  fn to_string(&self) -> String
-  {
-    format!("({}, {})", self.x, self.y)
-  }
+  fn to_string(&self) -> String { format!("({}, {})", self.x, self.y) }
 
-  fn print(&self)
-  {
-    println!("({}, {})", self.x, self.y)
-  }
+  fn print(&self) { println!("({}, {})", self.x, self.y) }
 
   fn add_scalar(&mut self, scalar: i32)
   {

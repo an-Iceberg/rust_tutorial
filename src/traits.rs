@@ -12,7 +12,12 @@ impl ToString for Person
   }
 }
 
-impl Person
+trait Print
+{
+  fn print(&self);
+}
+
+impl Print for Person
 {
   fn print(&self)
   {

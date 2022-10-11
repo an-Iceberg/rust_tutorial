@@ -16,6 +16,10 @@ mod shadowing;
 mod references;
 mod traits;
 mod reading_a_file;
+mod write_to_file;
+mod match_keyword;
+mod user_input;
+mod hash_maps;
 
 fn main()
 {
@@ -60,6 +64,14 @@ fn main()
   traits::run();
   println!();
   reading_a_file::run();
+  println!();
+  write_to_file::run();
+  println!();
+  match_keyword::run();
+  println!();
+  user_input::run();
+  println!();
+  hash_maps::run();
   println!();
 
   println!("Hello, world!");

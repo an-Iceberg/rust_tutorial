@@ -37,10 +37,7 @@ pub fn run()
   println!("Replace 'W' with 'w':{}", hello_world.replace("W", "w"));
 
   // Loop over string by whitespace
-  for word in hello_world.split_whitespace()
-  {
-    println!("{}", word);
-  }
+  for word in hello_world.split_whitespace() { println!("{}", word); }
 
   // Create string with capacity
   let mut some_string = String::with_capacity(10);
