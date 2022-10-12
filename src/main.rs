@@ -20,6 +20,8 @@ mod write_to_file;
 mod match_keyword;
 mod user_input;
 mod hash_maps;
+mod random_numbers;
+mod string_methods;
 
 fn main()
 {
@@ -72,6 +74,10 @@ fn main()
   user_input::run();
   println!();
   hash_maps::run();
+  println!();
+  random_numbers::run();
+  println!();
+  string_methods::run();
   println!();
 
   println!("Hello, world!");
