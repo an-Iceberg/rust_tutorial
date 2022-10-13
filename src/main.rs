@@ -22,6 +22,9 @@ mod user_input;
 mod hash_maps;
 mod random_numbers;
 mod string_methods;
+mod multiple_source_files;
+mod regex;
+mod modules;
 
 fn main()
 {
@@ -78,6 +81,12 @@ fn main()
   random_numbers::run();
   println!();
   string_methods::run();
+  println!();
+  multiple_source_files::run();
+  println!();
+  regex::run();
+  println!();
+  modules::some_mod::print_message();
   println!();
 
   println!("Hello, world!");

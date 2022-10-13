@@ -32,3 +32,5 @@ pub fn run()
   move_avatar(avatar3);
   move_avatar(avatar4);
 }
+
+/* TODO: this is where we left off: https://www.youtube.com/watch?v=JKmkKae-EhM&list=PLVvjrrRCBy2JSHf9tGxGKJ-bYAN_uDCUL&index=37 */
