@@ -6,6 +6,7 @@ pub fn run()
 {
   println!("  Variables");
 
+  // Variables in Rust are immutable by default
   let name = "Jack";
   let mut age = 24;
 

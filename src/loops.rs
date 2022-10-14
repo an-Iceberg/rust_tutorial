@@ -12,7 +12,7 @@ pub fn run()
     counter += 1;
     print!("{} ", counter);
 
-    if counter > 20 {break;}
+    if counter > 20 { break; }
   }
 
   println!();
@@ -49,6 +49,10 @@ pub fn run()
 
     print!("{} ", string);
   }
+
+  let animals = vec!["Cat", "Dog", "Rabbit", "Ant", "Horse", "Crocodile"];
+
+  for (index, animal) in animals.iter().enumerate() { println!("{} -> {}", index, animal); }
 
   println!()
 }
