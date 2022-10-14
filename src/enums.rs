@@ -1,3 +1,5 @@
+#![allow(dead_code)]
+
 enum Direction
 {
   // Variants
@@ -18,6 +20,32 @@ fn move_avatar(movement: Direction)
   }
 }
 
+enum Day
+{
+  Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
+}
+
+impl Day
+{
+  fn is_weekday(&self) -> bool
+  {
+    match self
+    {
+      &Day::Saturday | &Day::Sunday => return false,
+      _ => return true
+    }
+  }
+
+  fn is_weekend(&self) -> bool
+  {
+    match self
+    {
+      &Day::Saturday | &Day::Sunday => return true,
+      _ => return false
+    }
+  }
+}
+
 pub fn run()
 {
   println!("  Enums");
@@ -31,6 +59,8 @@ pub fn run()
   move_avatar(avatar2);
   move_avatar(avatar3);
   move_avatar(avatar4);
-}
 
-/* TODO: this is where we left off: https://www.youtube.com/watch?v=JKmkKae-EhM&list=PLVvjrrRCBy2JSHf9tGxGKJ-bYAN_uDCUL&index=37 */
+  let day = Day::Tuesday;
+
+  println!("Is Tuesday a weekday? {}", day.is_weekday());
+}

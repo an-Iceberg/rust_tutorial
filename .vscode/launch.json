@@ -5,17 +5,23 @@
       "type": "f5anything",
       "request": "launch",
       "command": "cargo check",
-      "terminalName": "Cargo check",
-      "terminalIndex": -1,
+      "terminalName": "Cargo Check",
       "showTerminal": true
+    },
+    {
+      "name": "Cargo test",
+      "type": "f5anything",
+      "request": "launch",
+      "command": "cargo test",
+      "terminalName": "Cargo Test",
+      "showTerminal": true,
     },
     {
       "name": "Cargo run",
       "type": "f5anything",
       "request": "launch",
       "command": "cargo run",
-      "terminalName": "Cargo run",
-      "terminalIndex": -1,
+      "terminalName": "Cargo Run",
       "showTerminal": true
     },
     {
@@ -23,8 +29,7 @@
       "type": "f5anything",
       "request": "launch",
       "command": "cargo build",
-      "terminalName": "Cargo build",
-      "terminalIndex": -1,
+      "terminalName": "Cargo Build",
       "showTerminal": true
     },
     {
@@ -32,8 +37,7 @@
       "type": "f5anything",
       "request": "launch",
       "command": "cargo run --release",
-      "terminalName": "Cargo run release",
-      "terminalIndex": -1,
+      "terminalName": "Cargo Run Release",
       "showTerminal": true
     },
     {
@@ -41,8 +45,7 @@
       "type": "f5anything",
       "request": "launch",
       "command": "cargo build --release",
-      "terminalName": "Cargo build release",
-      "terminalIndex": -1,
+      "terminalName": "Cargo Build Release",
       "showTerminal": true
     },
   ]

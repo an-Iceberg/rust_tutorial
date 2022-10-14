@@ -25,6 +25,7 @@ mod string_methods;
 mod multiple_source_files;
 mod regex;
 mod modules;
+mod option;
 
 fn main()
 {
@@ -88,6 +89,64 @@ fn main()
   println!();
   modules::some_mod::print_message();
   println!();
+  option::run();
+  println!();
+
+  /* Tests */
 
   println!("Hello, world!");
 }
+
+struct Rectangle {
+  width: u8,
+  height: u8
+}
+
+impl Rectangle {
+  fn is_square(&self) -> bool {
+    self.width == self.height
+  }
+}
+
+fn give_two() -> i32 {
+  2
+}
+
+#[cfg(test)]
+mod tests {
+  use crate::{shadowing, Rectangle};
+
+  #[test]
+  fn basic_test() {
+    assert!(1 == 1);
+  }
+
+  #[test]
+  #[should_panic]
+  fn fail_test() {
+    panic!("Oh no!");
+  }
+
+  #[test]
+  fn test_equals() {
+    assert_eq!(super::give_two(), 1 + 1);
+    assert_ne!(3, 1 + 1);
+    shadowing::run();
+  }
+
+  #[test]
+  #[ignore = "reason"]
+  fn ignore_me() {
+    panic!("You didn't ignore me!");
+  }
+
+  #[test]
+  #[should_panic]
+  fn test_struct() {
+    let rect = Rectangle { width: 50, height: 25 };
+
+    assert!(rect.is_square());
+  }
+}
+
+/* TODO: this is where we left off => https://www.youtube.com/watch?v=OX9HJsJUDxA&list=PLai5B987bZ9CoVR-QEIN9foz4QCJ0H2Y8 */
