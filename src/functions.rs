@@ -13,7 +13,8 @@ pub fn run()
   let add_nums = |n1: i32, n2: i32| n1 + n2 + n3;
   println!("Closure:{}", add_nums(3, 3));
 
-  some_function();
+  let some_result = some_function();
+  println!("{} {}", some_result.0, some_result.1);
 }
 
 /**
@@ -28,4 +29,4 @@ fn greet(greeting: &str, name: &str)
 fn add(n1: i32, n2: i32) -> i32 { n1 + n2 }
 
 // Apparently this is legal?
-fn some_function() -> (i32, i32) { return (32, 64); }
+fn some_function() -> (i32, String) { return (32, String::from("64")); }

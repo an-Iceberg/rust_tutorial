@@ -92,8 +92,6 @@ fn main()
   option::run();
   println!();
 
-  /* Tests */
-
   println!("Hello, world!");
 }
 
@@ -112,6 +110,7 @@ fn give_two() -> i32 {
   2
 }
 
+/* Tests */
 #[cfg(test)]
 mod tests {
   use crate::{shadowing, Rectangle};
