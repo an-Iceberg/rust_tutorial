@@ -11,7 +11,7 @@ pub fn run()
   let some_string = String::from(format!("some number: {}", 13));
   let some_other_string = format!("some other number: {}", 84);
 
-  println!("{}", some_string);
+  println!("{some_string}");
   println!("{}", some_other_string);
 
   // Get string length
@@ -37,17 +37,17 @@ pub fn run()
   println!("Replace 'W' with 'w':{}", hello_world.replace("W", "w"));
 
   // Loop over string by whitespace
-  for word in hello_world.split_whitespace() { println!("{}", word); }
+  for word in hello_world.split_whitespace() { println!("{word}"); }
 
   // Create string with capacity
   let mut some_string = String::with_capacity(10);
   some_string.push('a');
   some_string.push('b');
-  println!("{}", some_string);
+  println!("{some_string}");
 
   // Assertions
   assert_eq!(some_string.len(), 2);
   assert_eq!(some_string.capacity(), 10);
 
-  println!("{} {}", hello, hello_world);
+  println!("{hello} {hello_world}");
 }
