@@ -1,3 +1,5 @@
+#![allow(dead_code)]
+
 mod print_and_formatting;
 mod variables;
 mod data_types;
@@ -26,6 +28,10 @@ mod multiple_source_files;
 mod regex;
 mod modules;
 mod option;
+#[path ="the_rust_book/chapter_1.rs"] mod chapter_1;
+#[path ="the_rust_book/chapter_2.rs"] mod chapter_2;
+#[path ="the_rust_book/chapter_3.rs"] mod chapter_3;
+#[path ="the_rust_book/chapter_4_owndership.rs"] mod chapter_4_owndership;
 
 fn main()
 {
@@ -92,7 +98,17 @@ fn main()
   option::run();
   println!();
 
-  println!("Hello, world!");
+  println!("  The Rust Book");
+  println!();
+
+  chapter_1::run();
+  println!();
+  // chapter_2::run();
+  println!();
+  chapter_3::run();
+  println!();
+  chapter_4_owndership::run();
+  println!();
 }
 
 struct Rectangle {

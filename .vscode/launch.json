@@ -1,7 +1,7 @@
 {
   "configurations": [
     {
-      "name": "Cargo check",
+      "name": "Check",
       "type": "f5anything",
       "request": "launch",
       "command": "cargo check",
@@ -9,7 +9,7 @@
       "showTerminal": true
     },
     {
-      "name": "Cargo test",
+      "name": "Test",
       "type": "f5anything",
       "request": "launch",
       "command": "cargo test",
@@ -17,7 +17,7 @@
       "showTerminal": true,
     },
     {
-      "name": "Cargo run",
+      "name": "Run",
       "type": "f5anything",
       "request": "launch",
       "command": "cargo run",
@@ -25,7 +25,7 @@
       "showTerminal": true
     },
     {
-      "name": "Cargo build",
+      "name": "Build",
       "type": "f5anything",
       "request": "launch",
       "command": "cargo build",
@@ -33,7 +33,7 @@
       "showTerminal": true
     },
     {
-      "name": "Cargo run release",
+      "name": "Run release",
       "type": "f5anything",
       "request": "launch",
       "command": "cargo run --release",
@@ -41,7 +41,7 @@
       "showTerminal": true
     },
     {
-      "name": "Cargo build release",
+      "name": "Build release",
       "type": "f5anything",
       "request": "launch",
       "command": "cargo build --release",

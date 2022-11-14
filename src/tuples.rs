@@ -16,4 +16,9 @@ pub fn run()
   println!("{}\n{}\n{} {}\n{} {}", touple.0, touple.1, (touple.2).0, touple.2.1, touple.3.0, (touple.3).1);
 
   println!("first_name: {}, last_name: {}, street_name: {}, city_name: {}", first_name, last_name, street_name, city_name);
+
+  // Destructuring
+  let (first_name, last_name, age) = person;
+
+  println!("{first_name} {last_name} {age}");
 }

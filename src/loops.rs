@@ -52,7 +52,10 @@ pub fn run()
 
   let animals = vec!["Cat", "Dog", "Rabbit", "Ant", "Horse", "Crocodile"];
 
-  for (index, animal) in animals.iter().enumerate() { println!("{} -> {}", index, animal); }
+  for (index, animal) in animals.iter().enumerate()
+  {
+    println!("{} -> {}", index, animal);
+  }
 
   println!()
 }

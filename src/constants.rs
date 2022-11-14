@@ -1,4 +1,4 @@
-const MAXIMUM_NUMBER: u8 = 10;
+pub(crate) const MAXIMUM_NUMBER: u8 = 10;
 
 pub fn run() {
   println!("  Constants");

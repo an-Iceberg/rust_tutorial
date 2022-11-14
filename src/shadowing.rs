@@ -16,4 +16,8 @@ pub fn run()
   }
 
   println!("x: {}", x);
+
+  let x = 100_000;
+
+  println!("x: {}", x);
 }
