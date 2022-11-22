@@ -1,3 +1,5 @@
+#[path = "person/person.rs"] mod person;
+
 // Traditional struct
 struct Color
 {
@@ -52,4 +54,10 @@ pub fn run()
 
   println!("{}", vec1.to_string());
   vec1.print();
+
+  println!("Creating a complex composite type");
+
+  let some_person = person::Person::new("Knight", "Kazul", 178, 82, "unknown", "Streetstreet", 28, 998877, "Blighttown");
+
+  some_person.print();
 }
