@@ -3,7 +3,7 @@ String = Growable, heap-allocated data structure - Use when you need to modify o
 
 pub fn run()
 {
-  println!("  Strings");
+  println!("{}", "  Strings".to_uppercase());
 
   let hello = "Hello";
 

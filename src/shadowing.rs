@@ -1,6 +1,6 @@
 pub fn run()
 {
-  println!("  Shadowing");
+  println!("{}", "  Shadowing".to_uppercase());
 
   let x = 10;
   println!("x: {}", x);

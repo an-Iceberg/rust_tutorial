@@ -2,7 +2,7 @@
 
 pub fn run()
 {
-  println!("  Loops");
+  println!("{}", "  Loops".to_uppercase());
 
   let mut counter = 0;
 

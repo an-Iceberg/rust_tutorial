@@ -1,7 +1,7 @@
 /* Public funtion */
 pub fn run()
 {
-  println!("  Multiple Source Files");
+  println!("{}", "  Multiple Source Files".to_uppercase());
 
   print_something();
 

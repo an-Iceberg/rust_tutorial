@@ -1,6 +1,6 @@
 pub fn run()
 {
-  println!("  Options");
+  println!("{}", "  Options".to_uppercase());
 
   let name = String::from("John");
 

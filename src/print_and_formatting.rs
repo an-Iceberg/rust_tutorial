@@ -1,7 +1,7 @@
 pub fn run()
 {
   // Print to console
-  println!("  Printing and Formatting");
+  println!("{}", "  Printing and Formatting".to_uppercase());
 
   // Basic formatting
   println!("Number: {}", 1);

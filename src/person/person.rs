@@ -1,5 +1,7 @@
-#[path ="name.rs"] mod name;
-#[path ="address.rs"] mod address;
+#[path ="name.rs"]
+mod name;
+#[path ="address.rs"]
+mod address;
 
 pub struct Person
 {

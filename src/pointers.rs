@@ -1,6 +1,6 @@
 pub fn run()
 {
-  println!("  Pointers and References");
+  println!("{}", "  Pointers and References".to_uppercase());
 
   // Primitive array
   let array1 = [45, 12, 95, 28];

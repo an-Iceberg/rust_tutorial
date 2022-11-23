@@ -48,7 +48,7 @@ impl Day
 
 pub fn run()
 {
-  println!("  Enums");
+  println!("{}", "  Enums".to_uppercase());
 
   let avatar1:Direction = Direction::Left;
   let avatar2 = Direction::Up; // Shorthand

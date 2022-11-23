@@ -3,7 +3,7 @@ Max 12 elements */
 
 pub fn run()
 {
-  println!("  Tuples");
+  println!("{}", "  Tuples".to_uppercase());
 
   let person: (&str, &str, i8) = ("Brad", "Mass", 37);
 

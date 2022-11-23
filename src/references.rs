@@ -1,6 +1,6 @@
 pub fn run()
 {
-  println!("  References");
+  println!("{}", "  References".to_uppercase());
 
   let mut x = 10;
 

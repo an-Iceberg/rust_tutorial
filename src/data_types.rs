@@ -8,7 +8,7 @@ Arrays */
 
 pub fn run()
 {
-  println!("  Data Types");
+  println!("{}", "  Data Types".to_uppercase());
 
   // Default is 'i32'
   let number = 1;

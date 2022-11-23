@@ -2,7 +2,7 @@
 
 pub fn run()
 {
-  println!("  Conditionals");
+  println!("{}", "  Conditionals".to_uppercase());
 
   let age: u8 = 17;
   let check_id = false;

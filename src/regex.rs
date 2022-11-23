@@ -2,7 +2,7 @@ use regex::Regex;
 
 pub fn run()
 {
-  println!("  Regular Expressions");
+  println!("{}", "  Regular Expressions".to_uppercase());
 
   /* Matches a 5 letter word */
   let five_letter_word = Regex::new(r"(\w{5})").unwrap();

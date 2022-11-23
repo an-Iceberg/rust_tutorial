@@ -2,7 +2,7 @@ use std::io::stdin;
 
 pub fn run()
 {
-  println!("  Reading user input");
+  println!("{}", "  Reading user input".to_uppercase());
 
   let mut input = String::new();
 

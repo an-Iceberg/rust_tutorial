@@ -1,6 +1,6 @@
 pub fn run()
 {
-  println!("  Match keyword");
+  println!("{}", "  Match keyword".to_uppercase());
 
   let number = 2;
 

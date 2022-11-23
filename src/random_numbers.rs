@@ -2,7 +2,7 @@ use rand::Rng;
 
 pub fn run()
 {
-  println!("  Random Numbers");
+  println!("{}", "  Random Numbers".to_uppercase());
 
   let random_number = rand::thread_rng().gen_range(10..=50);
 

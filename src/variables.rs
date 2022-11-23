@@ -4,7 +4,7 @@ Rust is a block-scoped language */
 
 pub fn run()
 {
-  println!("  Variables");
+  println!("{}", "  Variables".to_uppercase());
 
   // Variables in Rust are immutable by default
   let name = "Jack";

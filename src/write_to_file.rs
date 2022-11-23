@@ -2,7 +2,7 @@ use std::{fs::File, io::Write};
 
 pub fn run()
 {
-  println!("  Writing to a file");
+  println!("{}", "  Writing to a file".to_uppercase());
 
   let mut file = File::create("output.txt").expect("Could not create file");
 

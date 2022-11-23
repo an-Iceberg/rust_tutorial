@@ -1,4 +1,5 @@
-#[path = "person/person.rs"] mod person;
+#[path = "person/person.rs"]
+mod person;
 
 // Traditional struct
 struct Color
@@ -35,7 +36,7 @@ impl Vector2d
 
 pub fn run()
 {
-  println!("  Structs");
+  println!("{}", "  Structs".to_uppercase());
 
   let mut purple = Color{ r: 128, g: 128, b: 255 };
 

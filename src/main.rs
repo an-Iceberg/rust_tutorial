@@ -28,10 +28,14 @@ mod multiple_source_files;
 mod regex;
 mod modules;
 mod option;
-#[path ="the_rust_book/chapter_1.rs"] mod chapter_1;
-#[path ="the_rust_book/chapter_2.rs"] mod chapter_2;
-#[path ="the_rust_book/chapter_3.rs"] mod chapter_3;
-#[path ="the_rust_book/chapter_4_owndership.rs"] mod chapter_4_owndership;
+#[path ="the_rust_book/chapter_1.rs"]
+mod chapter_1;
+#[path ="the_rust_book/chapter_2.rs"]
+mod chapter_2;
+#[path ="the_rust_book/chapter_3.rs"]
+mod chapter_3;
+#[path ="the_rust_book/chapter_4_owndership.rs"]
+mod chapter_4_owndership;
 
 fn main()
 {

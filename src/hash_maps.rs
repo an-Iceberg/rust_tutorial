@@ -2,7 +2,7 @@ use std::collections::HashMap;
 
 pub fn run()
 {
-  println!("  Hash Maps");
+  println!("{}", "  Hash Maps".to_uppercase());
 
   let mut grades = HashMap::new();
 

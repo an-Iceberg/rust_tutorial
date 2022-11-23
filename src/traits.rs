@@ -27,7 +27,7 @@ impl Print for Person
 
 pub fn run()
 {
-  println!("  Traits");
+  println!("{}", "  Traits".to_uppercase());
 
   let kazul = Person{ name: String::from("Kazul"), age: 24 };
 

@@ -1,6 +1,6 @@
 pub fn run()
 {
-  println!("  Vectors");
+  println!("{}", "  Vectors".to_uppercase());
 
   let my_vector: Vec<i32> = Vec::new();
   println!("{:?}", my_vector);

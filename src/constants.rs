@@ -1,7 +1,7 @@
 pub(crate) const MAXIMUM_NUMBER: u8 = 10;
 
 pub fn run() {
-  println!("  Constants");
+  println!("{}", "  Constants".to_uppercase());
 
   for number in 1..=MAXIMUM_NUMBER { print!("{} ", number); }
 

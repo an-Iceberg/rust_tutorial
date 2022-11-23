@@ -4,7 +4,7 @@ use std::mem;
 
 pub fn run()
 {
-  println!("  Arrays and Slices");
+  println!("{}", "  Arrays and Slices".to_uppercase());
 
   let mut numbers: [i16; 5] = [11, 84, 39, 93, 149];
 

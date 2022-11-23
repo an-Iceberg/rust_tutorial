@@ -2,7 +2,7 @@ use std::{fs::File, io::Read};
 
 pub fn run()
 {
-  println!("  Reading a file");
+  println!("{}", "  Reading a file".to_uppercase());
 
   let mut file = File::open("info.txt").expect("Can't open file");
   let mut contents = String::new();

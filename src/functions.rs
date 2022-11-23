@@ -1,6 +1,6 @@
 pub fn run()
 {
-  println!("  Functions");
+  println!("{}", "  Functions".to_uppercase());
 
   greet("Hello", "World");
 

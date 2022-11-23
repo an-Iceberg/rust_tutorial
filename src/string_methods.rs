@@ -1,6 +1,6 @@
 pub fn run()
 {
-  println!("  String Methods");
+  println!("{}", "  String Methods".to_uppercase());
 
   /* Replace */
   {
@@ -55,6 +55,12 @@ pub fn run()
     {
       println!("No character at index 11")
     }
+  }
+
+  // String formatting
+  {
+    let number = 74;
+    println!("0d{0} {0:#x} {0:#X} {0:#b} {0:#o}", number);
   }
 
   println!()
