@@ -28,6 +28,8 @@ mod multiple_source_files;
 mod regex;
 mod modules;
 mod option;
+mod type_casting;
+
 #[path ="the_rust_book/chapter_1.rs"]
 mod chapter_1;
 #[path ="the_rust_book/chapter_2.rs"]
@@ -100,6 +102,8 @@ fn main()
   modules::some_mod::print_message();
   println!();
   option::run();
+  println!();
+  type_casting::run();
   println!();
 
   println!("  The Rust Book");
