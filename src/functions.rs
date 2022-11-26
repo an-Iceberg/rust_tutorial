@@ -15,6 +15,11 @@ pub fn run()
 
   let some_result = some_function();
   println!("{} {}", some_result.0, some_result.1);
+
+  println!("Nested function definitions");
+  do_something();
+
+  println!();
 }
 
 /**
@@ -30,3 +35,20 @@ fn add(n1: i32, n2: i32) -> i32 { n1 + n2 }
 
 // Apparently this is legal?
 fn some_function() -> (i32, String) { return (32, String::from("64")); }
+
+fn do_something()
+{
+  println!("do something");
+  do_something_else();
+  do_something_else_again();
+
+  fn do_something_else()
+  {
+    println!("do something else");
+  }
+
+  fn do_something_else_again()
+  {
+    println!("do something else again");
+  }
+}
