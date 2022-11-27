@@ -50,6 +50,8 @@ pub fn run()
     print!("{} ", string);
   }
 
+  println!();
+
   let animals = vec!["Cat", "Dog", "Rabbit", "Ant", "Horse", "Crocodile"];
 
   for (index, animal) in animals.iter().enumerate()
@@ -57,5 +59,28 @@ pub fn run()
     println!("{} -> {}", index, animal);
   }
 
-  println!()
+  // Ranges
+  // This ranges from 0 to 10 exclusive
+  for number in 0..10
+  {
+    print!("{} ", number);
+  }
+
+  println!();
+
+  // This ranges from 0 to 10 inclusive
+  for number in 0..=10
+  {
+    print!("{} ", number);
+  }
+
+  println!();
+
+  // This ranges with a custom step
+  for number in (0..=10).step_by(2)
+  {
+    print!("{} ", number);
+  }
+
+  println!();
 }
