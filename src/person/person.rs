@@ -3,7 +3,7 @@ mod name;
 #[path ="address.rs"]
 mod address;
 
-pub struct Person
+pub(crate) struct Person
 {
   name: name::Name,
   height: u8,
@@ -14,7 +14,7 @@ pub struct Person
 
 impl Person
 {
-  pub fn new(first: &str, last: &str, height: u8, weight: u16, gender: &str, street: &str, house_number: u32, zip_code: u32, city: &str) -> Person
+  pub(crate) fn new(first: &str, last: &str, height: u8, weight: u16, gender: &str, street: &str, house_number: u32, zip_code: u32, city: &str) -> Person
   {
     Person {
       name: name::Name::new(first, last),
@@ -25,7 +25,7 @@ impl Person
     }
   }
 
-  pub fn print(self)
+  pub(crate) fn print(self)
   {
     self.name.print();
     println!("{} cm", self.height);

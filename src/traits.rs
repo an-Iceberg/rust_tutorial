@@ -25,7 +25,7 @@ impl Print for Person
   }
 }
 
-pub fn run()
+pub(crate) fn run()
 {
   println!("{}", "  Traits".to_uppercase());
 

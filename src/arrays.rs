@@ -2,7 +2,7 @@
 
 use std::mem;
 
-pub fn run()
+pub(crate) fn run()
 {
   println!("{}", "  Arrays and Slices".to_uppercase());
 

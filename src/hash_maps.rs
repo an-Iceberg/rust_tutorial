@@ -1,6 +1,6 @@
 use std::collections::HashMap;
 
-pub fn run()
+pub(crate) fn run()
 {
   println!("{}", "  Hash Maps".to_uppercase());
 

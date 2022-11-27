@@ -6,7 +6,7 @@ Characters: char
 Tuples
 Arrays */
 
-pub fn run()
+pub(crate) fn run()
 {
   println!("{}", "  Data Types".to_uppercase());
 

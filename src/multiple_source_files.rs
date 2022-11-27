@@ -1,5 +1,5 @@
 /* Public funtion */
-pub fn run()
+pub(crate) fn run()
 {
   println!("{}", "  Multiple Source Files".to_uppercase());
 

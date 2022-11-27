@@ -46,7 +46,7 @@ impl Day
   }
 }
 
-pub fn run()
+pub(crate) fn run()
 {
   println!("{}", "  Enums".to_uppercase());
 

@@ -1,6 +1,6 @@
 use std::io::stdin;
 
-pub fn run()
+pub(crate) fn run()
 {
   println!("{}", "  Reading user input".to_uppercase());
 

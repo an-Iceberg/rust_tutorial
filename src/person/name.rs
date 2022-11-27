@@ -1,4 +1,4 @@
-pub struct Name
+pub(crate) struct Name
 {
   first: String,
   last:  String,
@@ -6,12 +6,12 @@ pub struct Name
 
 impl Name
 {
-  pub fn new(first: &str, last: &str) -> Name
+  pub(crate) fn new(first: &str, last: &str) -> Name
   {
     Name { first: String::from(first), last: String::from(last) }
   }
 
-  pub fn print(self)
+  pub(crate) fn print(self)
   {
     println!("{} {}", self.first, self.last);
   }

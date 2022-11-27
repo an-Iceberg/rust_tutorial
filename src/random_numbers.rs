@@ -1,6 +1,6 @@
 use rand::Rng;
 
-pub fn run()
+pub(crate) fn run()
 {
   println!("{}", "  Random Numbers".to_uppercase());
 

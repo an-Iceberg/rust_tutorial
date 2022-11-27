@@ -1,4 +1,4 @@
-pub fn run()
+pub(crate) fn run()
 {
   println!("{}", "  String Methods".to_uppercase());
 

@@ -1,6 +1,6 @@
 // Conditionals are used to check the condition of something and act on the result
 
-pub fn run()
+pub(crate) fn run()
 {
   println!("{}", "  Conditionals".to_uppercase());
 

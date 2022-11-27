@@ -34,7 +34,7 @@ impl Vector2d
   }
 }
 
-pub fn run()
+pub(crate) fn run()
 {
   println!("{}", "  Structs".to_uppercase());
 

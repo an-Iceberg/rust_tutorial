@@ -1,6 +1,6 @@
 use std::{fs::File, io::Read};
 
-pub fn run()
+pub(crate) fn run()
 {
   println!("{}", "  Reading a file".to_uppercase());
 

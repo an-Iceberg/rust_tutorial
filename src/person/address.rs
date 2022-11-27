@@ -1,4 +1,4 @@
-pub struct Address
+pub(crate) struct Address
 {
   street:       String,
   house_number: u32,
@@ -8,12 +8,12 @@ pub struct Address
 
 impl Address
 {
-  pub fn new(street: &str, house_number: u32, zip_code: u32, city: &str) -> Address
+  pub(crate) fn new(street: &str, house_number: u32, zip_code: u32, city: &str) -> Address
   {
     Address { street: String::from(street), house_number, zip_code, city: String::from(city) }
   }
 
-  pub fn print(self)
+  pub(crate) fn print(self)
   {
     println!("{} {}", self.street, self.house_number);
     println!("{} {}", self.zip_code, self.city)

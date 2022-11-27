@@ -1,6 +1,6 @@
 use std::{fs::File, io::Write};
 
-pub fn run()
+pub(crate) fn run()
 {
   println!("{}", "  Writing to a file".to_uppercase());
 

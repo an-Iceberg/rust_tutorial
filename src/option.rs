@@ -1,4 +1,4 @@
-pub fn run()
+pub(crate) fn run()
 {
   println!("{}", "  Options".to_uppercase());
 

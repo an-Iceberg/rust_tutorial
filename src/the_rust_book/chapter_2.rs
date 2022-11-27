@@ -5,7 +5,7 @@ use rand::Rng;
 /**
   # This is really bad code
 */
-pub fn run()
+pub(crate) fn run()
 {
   println!("  Chapter 2");
 

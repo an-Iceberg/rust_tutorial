@@ -2,7 +2,7 @@
 Variables are immutable by default
 Rust is a block-scoped language */
 
-pub fn run()
+pub(crate) fn run()
 {
   println!("{}", "  Variables".to_uppercase());
 

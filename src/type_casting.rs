@@ -1,4 +1,4 @@
-pub fn run()
+pub(crate) fn run()
 {
   println!("{}", "  Type Casting".to_uppercase());
 

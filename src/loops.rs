@@ -1,6 +1,6 @@
 // Loops are used to repeat code until a condition is met
 
-pub fn run()
+pub(crate) fn run()
 {
   println!("{}", "  Loops".to_uppercase());
 

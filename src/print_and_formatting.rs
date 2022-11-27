@@ -1,4 +1,4 @@
-pub fn run()
+pub(crate) fn run()
 {
   // Print to console
   println!("{}", "  Printing and Formatting".to_uppercase());

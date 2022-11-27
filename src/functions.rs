@@ -1,4 +1,6 @@
-pub fn run()
+use crate::constants::MAXIMUM_NUMBER;
+
+pub(crate) fn run()
 {
   println!("{}", "  Functions".to_uppercase());
 
@@ -51,4 +53,6 @@ fn do_something()
   {
     println!("do something else again");
   }
+
+  println!("MAXIMUM_NUMBER from a different file: {}", MAXIMUM_NUMBER);
 }

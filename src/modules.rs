@@ -1,6 +1,6 @@
-pub mod some_mod
+pub(crate) mod some_mod
 {
-  pub fn print_message()
+  pub(crate) fn print_message()
   {
     println!("{}", "  Modules".to_uppercase());
 

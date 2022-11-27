@@ -1,7 +1,7 @@
 /* Tuples group values of different types together
 Max 12 elements */
 
-pub fn run()
+pub(crate) fn run()
 {
   println!("{}", "  Tuples".to_uppercase());
 

@@ -1,6 +1,6 @@
 use regex::Regex;
 
-pub fn run()
+pub(crate) fn run()
 {
   println!("{}", "  Regular Expressions".to_uppercase());
 
