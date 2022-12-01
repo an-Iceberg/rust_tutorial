@@ -3,10 +3,7 @@
 enum Direction
 {
   // Variants
-  Up,
-  Down,
-  Left,
-  Right
+  Up, Down, Left, Right,
 }
 
 fn move_avatar(movement: Direction)
@@ -22,7 +19,7 @@ fn move_avatar(movement: Direction)
 
 enum Day
 {
-  Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
+  Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday,
 }
 
 impl Day

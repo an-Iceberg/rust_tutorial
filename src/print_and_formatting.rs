@@ -14,7 +14,7 @@ pub(crate) fn run()
   println!("{name} likes to play {activity}", name = "John", activity = "the piano");
 
   // Placeholder traits
-  println!("Binary:{:b} Hex:{:x} Octal:{:o}", 100, 100, 100);
+  println!("Binary:{0:b} Hex:{0:x} Octal:{0:o} Decimal:{0}", 100);
 
   // Placeholder for debug trait
   println!("{:?}", (12, true, "Hello World"));

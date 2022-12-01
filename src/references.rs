@@ -26,6 +26,14 @@ pub(crate) fn run()
 
   print_color(&blue);
 
+  let mut color = Color{ red: 50, green: 50, blue: 50 };
+
+  // Apparently this is legal
+  let reference_to_color = &mut color;
+  reference_to_color.blue += 100;
+
+  print_color(&color);
+
   println!();
 }
 

@@ -34,5 +34,5 @@ pub(crate) fn run()
   }
 
   // Check if an entry exists in the HashMap
-  println!("Did you study C#? {}", grades.contains_key("C#"));
+  println!("Did you study GO? {}", grades.contains_key("GO"));
 }

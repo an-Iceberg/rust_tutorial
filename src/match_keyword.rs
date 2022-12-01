@@ -4,7 +4,8 @@ pub(crate) fn run()
 
   let number = 2;
 
-  match number {
+  match number
+  {
     2 => println!("{}", "2"),
     10 | 11 => println!("{}", "10 or 11"),
     2..=20 => println!("{}", "between 2 and 20"),
@@ -13,7 +14,8 @@ pub(crate) fn run()
 
   let name = "John";
 
-  match name {
+  match name
+  {
     "Chris" => println!(""),
     "Dominic" => println!("Boo, you suck"),
     _ => println!("yeh")

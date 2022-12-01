@@ -12,18 +12,23 @@ pub(crate) fn run()
     }
   );
 
-  println!("John is a {}", match get_occupation("John") {
-    Some(occupation) => occupation,
-    None => "This person has no ocupation"
-  });
+  println!("John is a {}", match get_occupation("John")
+    {
+      Some(occupation) => occupation,
+      None => "This person has no ocupation"
+    }
+  );
 
-  match get_occupation("Michael") {
-    Some(occupation) => {
+  match get_occupation("Michael")
+  {
+    Some(occupation) =>
+    {
       println!("Michael is a {}", occupation);
       let some_int = 10;
       println!("some integer: {}", some_int);
     }
-    None => {
+    None =>
+    {
       println!("Michael does not have an occupation");
     }
   }
@@ -33,7 +38,8 @@ pub(crate) fn run()
 
 fn get_occupation(name: &str) -> Option<&str>
 {
-  return match name {
+  return match name
+  {
     "John" => Some("Software Developer"),
     "Michael" => Some("Dentist"),
     _ => None
