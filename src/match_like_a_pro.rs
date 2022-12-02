@@ -14,12 +14,23 @@ pub fn run()
 
   let message = match (powder, weekend, activity)
   {
-    (true, true, Activity::Sleep(_) | Activity::Code) => format!("Go Ski"),
-    (_, true, Activity::Sleep(hours)) if hours > 10 => format!("Wake up after {} hours", hours),
-    (_, false, Activity::Sleep(hours)) if hours > 8 => format!("Wake up after {} hours", hours),
-    (_, _, Activity::Sleep(hours)) => format!("Sleep for {} hours", hours),
-    (_, _, Activity::Ski(resort)) => format!("Ski in {}", resort),
-    (_, _, Activity::Code) => format!("Code"),
+    (true, true, Activity::Sleep(_) | Activity::Code) =>
+      format!("Go Ski"),
+
+    (_, true, Activity::Sleep(hours)) if hours > 10 =>
+      format!("Wake up after {} hours", hours),
+
+    (_, false, Activity::Sleep(hours)) if hours > 8 =>
+      format!("Wake up after {} hours", hours),
+
+    (_, _, Activity::Sleep(hours)) =>
+      format!("Sleep for {} hours", hours),
+
+    (_, _, Activity::Ski(resort)) =>
+      format!("Ski in {}", resort),
+
+    (_, _, Activity::Code) =>
+      format!("Code"),
   };
 
   println!("{}", message);
