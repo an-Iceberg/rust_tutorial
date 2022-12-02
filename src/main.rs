@@ -29,6 +29,7 @@ mod regex;
 mod modules;
 mod option;
 mod type_casting;
+mod match_like_a_pro;
 
 #[path ="the_rust_book/chapter_1.rs"]
 mod chapter_1;
@@ -117,6 +118,8 @@ fn main()
   println!();
   chapter_4_owndership::run();
   println!();
+
+  match_like_a_pro::run();
 }
 
 struct Rectangle
