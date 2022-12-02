@@ -8,7 +8,11 @@ impl Name
 {
   pub(crate) fn new(first: &str, last: &str) -> Name
   {
-    Name { first: String::from(first), last: String::from(last) }
+    return Name
+    {
+      first: String::from(first),
+      last: String::from(last),
+    };
   }
 
   pub(crate) fn print(self)

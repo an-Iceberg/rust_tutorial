@@ -37,7 +37,9 @@ fn add(n1: i32, n2: i32) -> i32 { n1 + n2 }
 
 // Apparently this is legal?
 fn some_function() -> (i32, String)
-{ return (32, String::from("64")); }
+{
+  return (32, String::from("64"));
+}
 
 fn do_something()
 {

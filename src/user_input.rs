@@ -10,7 +10,10 @@ pub(crate) fn run()
 
   match stdin().read_line(&mut input)
   {
-    Ok(_) => println!("Success! Input was: {}", input),
-    Err(error) => println!("Error: {}", error),
+    Ok(_) =>
+      println!("Success! Input was: {}", input),
+
+    Err(error) =>
+      println!("Error: {}", error),
   }
 }

@@ -26,20 +26,26 @@ impl Day
 {
   fn is_weekday(&self) -> bool
   {
-    match self
+    return match self
     {
-      &Day::Saturday | &Day::Sunday => return false,
-      _ => return true
-    }
+      &Day::Saturday | &Day::Sunday =>
+        false,
+
+      _ =>
+        true
+    };
   }
 
   fn is_weekend(&self) -> bool
   {
-    match self
+    return match self
     {
-      &Day::Saturday | &Day::Sunday => return true,
-      _ => return false
-    }
+      &Day::Saturday | &Day::Sunday =>
+        true,
+
+      _ =>
+        false
+    };
   }
 }
 

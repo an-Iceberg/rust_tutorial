@@ -125,14 +125,14 @@ fn main()
 struct Rectangle
 {
   width: u8,
-  height: u8
+  height: u8,
 }
 
 impl Rectangle
 {
   fn is_square(&self) -> bool
   {
-    self.width == self.height
+    return self.width == self.height;
   }
 }
 

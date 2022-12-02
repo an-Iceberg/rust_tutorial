@@ -11,7 +11,9 @@ pub(crate) fn run()
   match file.write(b"Hello")
   {
     Ok(_) => {},
-    Err(error) => println!("{}", error)
+
+    Err(error) =>
+      println!("{}", error)
   }
 
   println!();

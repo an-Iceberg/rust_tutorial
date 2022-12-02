@@ -118,7 +118,7 @@ fn gives_ownership() -> String
 {
   let some_string = String::from("hello");
 
-  some_string
+  return some_string;
 }
 
 fn takes_and_gives_back(string: String) -> String
@@ -126,19 +126,19 @@ fn takes_and_gives_back(string: String) -> String
   let string_copy = string.clone();
   println!("{string_copy}");
 
-  string
+  return string;
 }
 
 fn calculate_length(string: String) -> (String, usize)
 {
   let length = string.len();
-  (string, length)
+  return (string, length);
 }
 
 fn calculate_length_ref(string: &String) -> usize
 {
   let length = string.len();
-  length
+  return length;
 }
 
 fn change(some_string: &mut String)

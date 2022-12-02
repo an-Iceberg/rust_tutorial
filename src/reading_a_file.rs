@@ -18,8 +18,11 @@ pub(crate) fn run()
   {
     match byte
     {
-      Ok(ok_byte) => print!("{} ", ok_byte as char),
-      Err(error) => print!("{} ", error)
+      Ok(ok_byte) =>
+        print!("{} ", ok_byte as char),
+
+      Err(error) =>
+        print!("{} ", error)
     }
   }
 }
