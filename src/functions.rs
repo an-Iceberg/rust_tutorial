@@ -25,8 +25,8 @@ pub(crate) fn run()
 }
 
 /**
- * Greets someone with the specified greeting
- */
+Greets someone with the specified greeting
+*/
 fn greet(greeting: &str, name: &str)
 {
   println!("{} {}, nice to meet you.", greeting, name);

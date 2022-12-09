@@ -3,7 +3,7 @@ use std::{io::{self, Write}, cmp::Ordering};
 use rand::Rng;
 
 /**
-  # This is really bad code
+# This is really bad code
 */
 pub(crate) fn run()
 {

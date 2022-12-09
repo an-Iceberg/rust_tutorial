@@ -141,7 +141,7 @@ fn give_two() -> i32
   return 2;
 }
 
-/* Tests */
+// Tests
 #[cfg(test)]
 mod tests
 {

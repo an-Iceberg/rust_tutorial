@@ -1,4 +1,6 @@
-/* Public funtion */
+/**
+Public function
+*/
 pub(crate) fn run()
 {
   println!("{}", "  Multiple Source Files".to_uppercase());
@@ -8,7 +10,9 @@ pub(crate) fn run()
   println!();
 }
 
-/* By default, all functions of a module are private */
+/**
+By default, all functions of a module are private
+*/
 fn print_something()
 {
   println!("Hello World")

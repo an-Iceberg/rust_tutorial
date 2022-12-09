@@ -11,7 +11,7 @@ pub(crate) fn run()
 
   println!("File Contents: {}", contents);
 
-  /* Reading a file byte by byte */
+  // Reading a file byte by byte
   file = File::open("info.txt").expect("Can't open file");
 
   for byte in file.bytes()

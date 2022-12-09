@@ -1,4 +1,4 @@
-/* Arrays are a fixed list where elements are of the same data type */
+// Arrays are a fixed list where elements are of the same data type
 
 use std::mem;
 

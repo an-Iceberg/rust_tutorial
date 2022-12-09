@@ -2,14 +2,14 @@ pub(crate) fn run()
 {
   println!("{}", "  String Methods".to_uppercase());
 
-  /* Replace */
+  // Replace
   {
     let my_string = String::from("Rust is fantastic");
 
     println!("{}", my_string.replace("fanta", "coca-cola"))
   }
 
-  /* Lines */
+  // Lines
   {
     let my_string = String::from("The weather is\nnice\noutside\nm8");
 
@@ -19,7 +19,7 @@ pub(crate) fn run()
     }
   }
 
-  /* Split */
+  // Split
   {
     let my_string = String::from("Leave+a+like+if+you+enjoyed");
     let tokens: Vec<&str> = my_string.split("+").collect();
@@ -27,7 +27,7 @@ pub(crate) fn run()
     println!("{:?}", tokens);
   }
 
-  /* Trim */
+  // Trim
   {
     let my_string = String::from("      Hello World             \n\r");
 
@@ -35,18 +35,18 @@ pub(crate) fn run()
     println!("after trim: {}", my_string.trim());
   }
 
-  /* Chars */
+  // Chars
   {
     let my_string = String::from("Hello World, how are you doing tonight?");
 
-    /* Get character at index */
+    // Get character at index
     match my_string.chars().nth(11)
     {
       Some(character) => println!("Character at index 11: \"{}\"", character),
       None => println!("No character at index 11")
     }
 
-    /* Also possible to do it like this */
+    // Also possible to do it like this
     if let Some(character) = my_string.chars().nth(11)
     {
       println!("Character at index 11: \"{}\"", character)
