@@ -30,16 +30,18 @@ mod modules;
 mod option;
 mod type_casting;
 mod match_like_a_pro;
+mod my_math;
+mod my_math_tests;
 
-#[path ="the_rust_book/chapter_1.rs"]
-mod chapter_1;
-#[path ="the_rust_book/chapter_2.rs"]
-mod chapter_2;
-#[path ="the_rust_book/chapter_3.rs"]
-mod chapter_3;
-#[path ="the_rust_book/chapter_4_owndership.rs"]
-mod chapter_4_owndership;
+#[path ="the_rust_book/chapter_1.rs"] mod chapter_1;
+#[path ="the_rust_book/chapter_2.rs"] mod chapter_2;
+#[path ="the_rust_book/chapter_3.rs"] mod chapter_3;
+#[path ="the_rust_book/chapter_4_owndership.rs"] mod chapter_4_owndership;
 
+#[cfg(test)]
+mod tests;
+
+// TODO: consider moving all tests into a separate directory "tests"
 fn main()
 {
   // Comments
@@ -120,67 +122,4 @@ fn main()
   println!();
 
   match_like_a_pro::run();
-}
-
-struct Rectangle
-{
-  width: u8,
-  height: u8,
-}
-
-impl Rectangle
-{
-  fn is_square(&self) -> bool
-  {
-    return self.width == self.height;
-  }
-}
-
-fn give_two() -> i32
-{
-  return 2;
-}
-
-// Tests
-#[cfg(test)]
-mod tests
-{
-  use crate::{shadowing, Rectangle};
-
-  #[test]
-  fn basic_test()
-  {
-    assert!(1 == 1);
-  }
-
-  #[test]
-  #[should_panic]
-  fn fail_test()
-  {
-    panic!("Oh no!");
-  }
-
-  #[test]
-  fn test_equals()
-  {
-    assert_eq!(super::give_two(), 1 + 1);
-    assert_ne!(3, 1 + 1);
-    shadowing::run();
-  }
-
-  #[test]
-  #[ignore = "reason"]
-  fn ignore_me()
-  {
-    panic!("You didn't ignore me!");
-  }
-
-  #[test]
-  #[should_panic]
-  fn test_struct()
-  {
-    let rect = Rectangle { width: 50, height: 25 };
-
-    assert!(rect.is_square());
-  }
 }
