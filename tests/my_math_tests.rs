@@ -1,6 +1,7 @@
 #[cfg(test)]
 
-use crate::my_math;
+#[path ="../src/my_math.rs"]
+mod my_math;
 
 #[test]
 fn my_add_tests()

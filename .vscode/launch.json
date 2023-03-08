@@ -33,6 +33,14 @@
       "showTerminal": true
     },
     {
+      "name": "Build WASM",
+      "type": "f5anything",
+      "request": "launch",
+      "command": "cargo build --verbose --color always --message-format human --target wasm32-unknown-unknown",
+      "terminalName": "Cargo Build WASM",
+      "showTerminal": true
+    },
+    {
       "name": "Run release",
       "type": "f5anything",
       "request": "launch",
@@ -46,6 +54,22 @@
       "request": "launch",
       "command": "cargo build --release --verbose --color always --message-format human",
       "terminalName": "Cargo Build Release",
+      "showTerminal": true
+    },
+    {
+      "name": "Build release WASM",
+      "type": "f5anything",
+      "request": "launch",
+      "command": "cargo build --release --verbose --color always --message-format human --target wasm32-unknown-unknown",
+      "terminalName": "Cargo Build release WASM",
+      "showTerminal": true
+    },
+    {
+      "name": "Vite",
+      "type": "f5anything",
+      "request": "launch",
+      "command": "vite ${workspaceFolder}/dist",
+      "terminalName": "Vite",
       "showTerminal": true
     },
   ]

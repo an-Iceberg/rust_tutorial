@@ -1,6 +1,7 @@
 #[cfg(test)]
 
-use crate::shadowing;
+#[path ="../src/shadowing.rs"]
+mod shadowing;
 // use crate::my_math;
 
 #[test]

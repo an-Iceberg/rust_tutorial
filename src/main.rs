@@ -31,13 +31,21 @@ mod option;
 mod type_casting;
 mod match_like_a_pro;
 mod my_math;
+mod generics;
+
+#[path ="../tests/my_math_tests.rs"]
 mod my_math_tests;
 
-#[path ="the_rust_book/chapter_1.rs"] mod chapter_1;
-#[path ="the_rust_book/chapter_2.rs"] mod chapter_2;
-#[path ="the_rust_book/chapter_3.rs"] mod chapter_3;
-#[path ="the_rust_book/chapter_4_owndership.rs"] mod chapter_4_owndership;
+#[path ="the_rust_book/chapter_1.rs"]
+mod chapter_1;
+#[path ="the_rust_book/chapter_2.rs"]
+mod chapter_2;
+#[path ="the_rust_book/chapter_3.rs"]
+mod chapter_3;
+#[path ="the_rust_book/chapter_4_owndership.rs"]
+mod chapter_4_owndership;
 
+#[path ="../tests/tests.rs"]
 #[cfg(test)]
 mod tests;
 
@@ -107,6 +115,8 @@ fn main()
   option::run();
   println!();
   type_casting::run();
+  println!();
+  generics::run();
   println!();
 
   println!("  The Rust Book");
